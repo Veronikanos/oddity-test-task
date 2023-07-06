@@ -34,8 +34,44 @@ footer {
   flex-shrink: 0;
 }
 
- /* .footer-line {
-} */
+.container{
+    padding: 15px 20px;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus{
+    cursor: pointer;
+}
+
+.btn__menu {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.btn__menu:hover,
+.btn__menu:focus{
+    background-color: lightgrey;
+}
+
+.icon-menu {
+    width: 20px;
+    height: 20px;
+  }
 
 .nav{
     display: flex;
@@ -44,17 +80,35 @@ footer {
 
 .header-nav{
     justify-content: flex-end;
+   
+}
+
+.header-nav .nav-list{
+    gap: 15px;
 }
 
 .nav-list{
-    display: flex;
+    display: flex; 
+    align-items: center;
 }
 
-button{
-    padding: 0 16px;
+.nav-list_link:hover,
+.nav-list_link:focus {
+    text-decoration: underline;
 }
 
-.search-container {
+.btn__search {
+    background-color: #f8f9fa;
+    color: #3c4043;
+}
+
+.btn__login{
+    color: #ffffff;
+    background-color: #4c8bf5;
+}
+
+
+/* .search-container {
     position: relative;
   }
 
@@ -64,8 +118,4 @@ button{
     border: 1px solid #ccc;
     border-radius: 30px;
     padding-left: 30px;
-}
-
-.icon-search {
-    left: 5px;
-  }
+} */

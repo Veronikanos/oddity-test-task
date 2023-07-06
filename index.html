@@ -13,10 +13,25 @@
       <div class="container">
         <nav class="nav header-nav">
           <ul class="nav-list">
-            <li>Gmail</li>
-            <li>Зображення</li>
-            <li>Icon</li>
-            <li><button type="button">Увійти</button></li>
+            <li><a href="" class="nav-list_link">Gmail</a></li>
+            <li><a href="" class="nav-list_link">Зображення</a></li>
+            <li>
+              <button type="button" class="btn btn__menu">
+                <svg
+                  width="24"
+                  height="24"
+                  aria-label="Menu dropdown button">
+                  <use
+                    class="mobile-menu--close"
+                    href="./symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn btn__login">
+                Увійти
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -24,9 +39,21 @@
     <main>
       <div class="container">
         <img src="./assets/img/google-logo.png" alt="google logo" />
-        <label class="search-container"> 
-            <input type="text" name="" id="searchInput" class="search-input" />
+        <label class="search-container">
+          <input
+            type="text"
+            name=""
+            id="searchInput"
+            class="search-input" />
         </label>
+        <div class="btn-wrapper">
+          <button type="button" class="btn btn__search">
+            Пошук Google
+          </button>
+          <button type="button" class="btn btn__search">
+            Мені пощастить
+          </button>
+        </div>
       </div>
     </main>
     <footer class="footer">
