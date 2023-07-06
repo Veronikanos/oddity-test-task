@@ -19,11 +19,11 @@
               <button type="button" class="btn btn__menu">
                 <svg
                   width="24"
-                  height="24"
+                  height="24" fill="#5F6368"
                   aria-label="Menu dropdown button">
                   <use
-                    class="mobile-menu--close"
-                    href="./symbol-defs.svg#icon-menu"></use>
+                    class="mobile-menu"
+                    xlink:href="./symbol-defs.svg#icon-menu"></use>
                 </svg>
               </button>
             </li>
@@ -36,15 +36,28 @@
         </nav>
       </div>
     </header>
+
     <main>
-      <div class="container">
+      <div class="container main-container">
+        <div class="image-wrapper">
         <img src="./assets/img/google-logo.png" alt="google logo" />
+    </div>
         <label class="search-container">
           <input
             type="text"
-            name=""
+            name="googleSearchInput"
             id="searchInput"
             class="search-input" />
+            <svg class="search-icon"  width="20"
+            height="20" fill="#5F6368">
+                <use xlink:href="symbol-defs.svg#icon-search"></use>
+              </svg>
+            <div class="input-icons_wrapper">
+                <a href="">
+                    <img  class="input-icon icon-keyboard" src="./assets/icons/keyboard-icon.png" alt="keyboard icon">
+                </a>
+            <a href="#"> <img class="input-icon icon-voice" src="./assets/icons/google-mic.png" alt="Search by voice"></a>
+            <a href="#"> <img class="input-icon icon-photo" src="./assets/icons/google-lens.png" alt="Search by photo"></a></div>
         </label>
         <div class="btn-wrapper">
           <button type="button" class="btn btn__search">
@@ -54,8 +67,10 @@
             Мені пощастить
           </button>
         </div>
+        <span class="language-block">Мова Google: <a class="language-block_link"href="">English</a></span>
       </div>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-line footer__location">
