@@ -21,6 +21,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.2rem;
 }
 
 /* common styles for position whole page */
@@ -95,6 +96,10 @@ footer {
   background-color: #4c8bf5;
 }
 
+.main-container {
+  padding-top: 15rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -117,10 +122,6 @@ footer {
 .nav-list_link:focus {
   text-decoration: underline;
 }
-
-/* .image-wrapper{
-    margin-bottom: 20px;
-} */
 
 .search-container {
   position: relative;
@@ -185,4 +186,22 @@ footer {
 
 .language-block_link {
   color: rgb(0, 0, 150);
+}
+
+.footer .container {
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.footer-line {
+  padding: 15px 20px;
+  background-color: rgb(243, 243, 243);
+}
+
+.footer__location {
+  border-bottom: 1px solid #dfe1e5;
+}
+
+.nav-list__footer {
+  gap: 20px;
 }
