@@ -5,6 +5,9 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Google page clone</title>
   </head>
@@ -23,7 +26,7 @@
                   aria-label="Menu dropdown button">
                   <use
                     class="mobile-menu"
-                    xlink:href="./symbol-defs.svg#icon-menu"></use>
+                    xlink:href="./assets/svg/symbol-defs.svg#icon-menu"></use>
                 </svg>
               </button>
             </li>
@@ -39,8 +42,15 @@
 
     <main>
       <div class="container main-container">
-        <div class="image-wrapper">
-        <img src="./assets/img/google-logo.png" alt="google logo" />
+        <div class="logo-wrapper">
+
+        <span class="logo-letter blue">G</span>
+        <span class="logo-letter red">o</span>
+        <span class="logo-letter yellow">o</span>
+        <span class="logo-letter blue">g</span>
+        <span class="logo-letter green">l</span>
+        <span class="logo-letter red">e</span>
+
         </div>
         <label class="search-container">
           <input
@@ -50,7 +60,7 @@
             class="search-input" />
             <svg class="search-icon"  width="20"
             height="20" fill="#5F6368">
-                <use xlink:href="symbol-defs.svg#icon-search"></use>
+                <use xlink:href="./assets/svg/symbol-defs.svg#icon-search"></use>
               </svg>
             <div class="input-icons_wrapper">
                 <a href="">
@@ -63,7 +73,7 @@
           <button type="button" class="btn btn__search">
             Пошук Google
           </button>
-          <button type="button" class="btn btn__search">
+          <button type="button" class="btn btn__search" data-change>
             Мені пощастить
           </button>
         </div>
