@@ -1,3 +1,71 @@
-body {
-    background-color: antiquewhite;
+/* reset styles */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common styles for position whole page */
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+ /* .footer-line {
+} */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav{
+    justify-content: flex-end;
+}
+
+.nav-list{
+    display: flex;
+}
+
+button{
+    padding: 0 16px;
+}
+
+.search-container {
+    position: relative;
+  }
+
+.search-input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-left: 30px;
+}
+
+.icon-search {
+    left: 5px;
+  }

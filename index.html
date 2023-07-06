@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Google page clone</title>
-</head>
-<body>
-    Google page
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav header-nav">
+          <ul class="nav-list">
+            <li>Gmail</li>
+            <li>Зображення</li>
+            <li>Icon</li>
+            <li><button type="button">Увійти</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <img src="./assets/img/google-logo.png" alt="google logo" />
+        <label class="search-container"> 
+            <input type="text" name="" id="searchInput" class="search-input" />
+        </label>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-line footer__location">
+          <span>Україна</span>
+        </div>
+        <div class="footer-line nav">
+          <ul class="nav-list nav-list_left">
+            <li class="nav-list__tab">Про Google</li>
+            <li class="nav-list__tab">Реклама</li>
+            <li class="nav-list__tab">Для бізнесу</li>
+            <li class="nav-list__tab">Як працює Пошук</li>
+          </ul>
+          <ul class="nav-list nav-list_right">
+            <li class="nav-list__tab">Конфіденційність</li>
+            <li class="nav-list__tab">Умови</li>
+            <li class="nav-list__tab">Налаштування</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
